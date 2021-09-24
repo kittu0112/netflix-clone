@@ -1,0 +1,124 @@
+.logo{
+    width: 100%;
+	height: 93vh;
+	position: relative;
+	background: url('images/background.jpg') no-repeat center center/cover;
+}
+.logo::after{
+    content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.6);
+	box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+.logo-top{
+    position: relative;
+	z-index: 2;
+	height: 90px;
+}
+.logo-top img{
+    width: 170px;
+	position: absolute;
+	top: 20%;
+	margin-left: 3%;
+}
+.signin{
+	padding: 30px;
+	z-index: 70;
+	position: relative;
+	max-width: 350px;
+	height: 460px;
+	margin-left: 50%;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 10px;
+	box-sizing: border-box;
+	transform: translateX(-50%);
+}
+.signin h2{
+	font-size: 30px;
+	color: #fff;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+.signin input{
+	height: 30px;
+	width: 100%;
+	border-radius: 3px;
+	color: #fff;
+	background-color: #333;
+	border: 1px solid #333;
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+}
+.input_wrap{
+	margin-bottom: 20px;
+}
+.signin button{
+	height: 30px;
+	width: 100%;
+	color: #fff;
+	background-color: #e50914;
+	border-radius: 3px;
+	font-weight: 300;
+	font-size: 15px;
+	border: 2px solid #e50914;
+}
+.support{
+	display: flex;
+	color: #fff;
+	justify-content: space-between;
+	font-size: 12px;
+}
+.support input{
+	width: 15px;
+	height: 20px;
+}
+.remember{
+	display: flex;
+	align-items: center;
+}
+.remeber span{
+	margin-right: 10px;
+	height: 20px;
+}
+.signin_facebook{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	color: #737373;
+}
+.signin_facebook img{
+	height: 20px;
+	width: 20px;
+}
+.signin_facebook span{
+	margin-right: 10px;
+	font-size: 12px;
+}
+.signin_facebook span a{
+	text-decoration: none;
+	color: #737373;
+}
+.signup{
+	color: #737373;
+	font-size: 13px;
+}
+.signup a{
+	color: #fff;
+	font-size: 13px;
+	text-decoration: none;
+}
+.terms{
+	color: #737373;
+	font-size: 12px;
+}
+.terms a{
+	text-decoration: none;
+	color: blue;
+	font-size: 15px;
+}

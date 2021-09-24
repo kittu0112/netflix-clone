@@ -1,0 +1,176 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS variables */
+:root{
+    --navbar-height:59px;
+}
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+/* Logo and Image  */
+#logo{
+    margin: 10px 30px;
+}
+#logo img{
+    top: 30%;
+    height: 53px;
+    margin: 3px 6px; 
+}
+/* Navigation bar: List styling */
+
+#navbar ul{
+    display: flex;
+    }
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 9px; 
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* Series section  */
+#series{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 563px;
+    justify-content: center;
+    align-items: center;
+}
+#series::before{
+    content: "";
+    background: url('images/background.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 650px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#series h1{
+    font-size: 3.7rem;
+    color: #fff;
+}
+#series p{
+    color: #fff;
+    font-size: 2.3rem;
+}
+/* Films section */
+
+#films{
+    margin: 10px;
+    flex-direction: column;
+}
+#films .box{
+    display: flex;
+    padding: 30px;
+    margin: 3px 7px;
+    border-radius: 19px;
+}
+#films .box img{
+    height: 30%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+#thriller{
+    margin: 10px;
+    flex-direction: row;
+}
+#thriller .box1{
+    display: flex;
+    padding: 30px;
+    margin: 3px 7px;
+    border-radius: 19px;
+}
+#thriller .box1 img{
+    height: 30%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+#films h1{
+    font-size: 3rem;
+}
+#thriller h1{
+    font-size: 3rem;
+}
+#thriller p{
+font-size: 1.3rem;
+}
+
+.btn{
+    padding: 7px 9px;
+    border: 2px solid white;
+    background-color: #fff;
+    color: #000;
+    margin: 9px;
+    font-size: 1.9rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.footer {
+	max-width: 70%;
+	margin: 1rem auto;
+	overflow: auto;
+}
+
+.footer,
+.footer a {
+	color: #000;
+	font-size: 1.3rem;
+}
+
+.footer p {
+	margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2rem;
+}
+
+.footer li {
+	line-height: 1.9;
+}
+
+.footer .lang-select {
+	margin-top: 2rem;
+	color: #999;
+	background-color: #000;
+	background-image: none;
+	border: 1px solid #333;
+	padding: 1rem 1.2rem;
+	border-radius: 5px;
+}
